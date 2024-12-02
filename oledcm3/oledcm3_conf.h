@@ -10,6 +10,8 @@
     clk - a5
 */
 
+// pins and port to use SPI1
+
 #define OLED_SPI_PORT        SPI1
 #define OLED_CS_Port         GPIOA
 #define OLED_CS_Pin          GPIO4
@@ -23,9 +25,10 @@
 #define OLED_Clk_Port        GPIOA
 #define OLED_Clk_Pin         GPIO5
 
+// include fonts
+#define OLEDCM3_INCLUDE_FONT_7x10
 
-#define SSD1306_INCLUDE_FONT_7x10
-
+// display resolution
 #define OLEDCM3_HEIGHT          64
 #define OLEDCM3_WIDTH           128
 
